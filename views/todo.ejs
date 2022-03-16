@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Share Tasks</title>
+    <link rel="stylesheet" href="css/todo.css" />
+</head>
+
+<body>
+    <div class="main">
+        <h1>Share Tasks</h1>
+
+        <aside class="notification"></aside>
+
+        <section class="login">
+            <form class="connection" action="#" method="post">
+                <input type="text" name="login" data-control="login" value="" placeholder="Please enter your name to sign in" />
+                <input type="submit" data-control="connect" value="See task list" />
+            </form>
+        </section>
+
+        <section class="user hidden">
+            <div class="username">Logged as: <span></span></div>
+            <button class="logout" data-control="logout">Logout</button>
+        </section>
+
+        <section class="todo hidden">
+            <h2>Share Tasks</h2>
+            <ul class="list tasks"></ul>
+            <form class="add" action="#" method="post">
+                <input type="text" name="task" class="input" data-control="task" value="" placeholder="Add a task..." />
+                <input type="submit" class="action" data-control="add" value="add" />
+            </form>
+        </section>
+
+
+    </div>
+
+    <script id="loader" data-app="todo" data-main="js/main.js" src="js/require.js"></script>
+</body>
+
+</html>
